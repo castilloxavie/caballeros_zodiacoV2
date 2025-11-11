@@ -65,17 +65,44 @@ PUERTO_SERVIDOR_INSERCION=3002
 PUERTO_SERVIDOR_CONSULTA_NOMBRE=3003
 PUERTO_SERVIDOR_ACTUALIZACION=3004
 PUERTO_SERVIDOR_ELIMINACION=3005
-PUERTO_SERVIDOR_UNIFICADO=3000
+PUERTO_SERVIDOR_UNIFICADO=3007
 ```
 
-### 3. Instalar Dependencias del Backend
+### 3. Configurar Entorno Virtual y Instalar Dependencias del Backend
 
-Navega al directorio `backend` e instala las dependencias:
+Para evitar conflictos con otras instalaciones de Python, se recomienda crear y activar un entorno virtual antes de instalar las dependencias.
+
+Navega al directorio `backend` y configura el entorno virtual:
 
 ```bash
 cd backend
+python -m venv venv
+```
+
+Activa el entorno virtual:
+
+- **En Windows (Command Prompt)**:
+  ```bash
+  venv\Scripts\activate
+  ```
+
+- **En Windows (PowerShell)**:
+  ```bash
+  venv\Scripts\Activate.ps1
+  ```
+
+- **En Linux/Mac**:
+  ```bash
+  source venv/bin/activate
+  ```
+
+Una vez activado el entorno virtual (verás `(venv)` en el prompt), instala las dependencias:
+
+```bash
 pip install -r requirements.txt
 ```
+
+**Nota**: Asegúrate de activar el entorno virtual cada vez que trabajes en el proyecto backend.
 
 ### 4. Instalar Dependencias del Frontend
 

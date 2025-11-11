@@ -31,7 +31,7 @@ const CaballerosDetail = () => {
     <div>
       <h2>Detalle de Caballero</h2>
       <div className="card" style={{ maxWidth: '600px', margin: '0 auto' }}>
-        <img src={`/images/${caballero.url_imagen}`} alt={caballero.nombre} onError={(e) => e.target.src='/images/default.jpg'} style={{ height: '300px' }} />
+        <img src={`/images/${caballero.url_imagen}`} alt={caballero.nombre} onError={(e) => e.target.src='/images/default.jpg'} style={{ height: '300px', objectFit: 'contain', objectPosition: 'center' }} />
         <h3>{caballero.nombre}</h3>
         <p><strong>Signo:</strong> {caballero.signo}</p>
         <p><strong>Armadura:</strong> {caballero.armadura}</p>

@@ -77,6 +77,12 @@ const CaballerosForm = () => {
             <option value="Capricornio">Capricornio</option>
             <option value="Acuario">Acuario</option>
             <option value="Piscis">Piscis</option>
+            <option value="Dragón">Dragón</option>
+            <option value="Pegasus">Pegasus</option>
+            <option value="Cisne">Cisne</option>
+            <option value="Andrómeda">Andrómeda</option>
+            <option value="Fénix">Fénix</option>
+            <option value="Osa Mayor">Osa Mayor</option>
           </select>
         </div>
         <div className="form-group">

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import { getCaballeroByName } from '../services/api';
 
@@ -8,11 +8,7 @@ const CaballerosDetail = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    fetchCaballero();
-  }, [nombre]);
-
-  const fetchCaballero = async () => {
+  const fetchCaballero = useCallback(async () => {
     try {
       const data = await getCaballeroByName(nombre);
       setCaballero(data);
@@ -21,7 +17,11 @@ const CaballerosDetail = () => {
       setError('Error al cargar caballero');
       setLoading(false);
     }
-  };
+  }, [nombre]);
+
+  useEffect(() => {
+    fetchCaballero();
+  }, [fetchCaballero]);
 
   if (loading) return <p>Cargando caballero...</p>;
   if (error) return <p>{error}</p>;

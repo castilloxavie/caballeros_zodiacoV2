@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { createCaballero, updateCaballero, getCaballeroByName } from '../services/api';
 
@@ -16,20 +16,20 @@ const CaballerosForm = () => {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(null);
 
-  useEffect(() => {
-    if (nombre) {
-      fetchCaballero();
-    }
-  }, [nombre]);
-
-  const fetchCaballero = async () => {
+  const fetchCaballero = useCallback(async () => {
     try {
       const data = await getCaballeroByName(nombre);
       setFormData(data);
     } catch (err) {
       setError('Error al cargar caballero');
     }
-  };
+  }, [nombre]);
+
+  useEffect(() => {
+    if (nombre) {
+      fetchCaballero();
+    }
+  }, [nombre, fetchCaballero]);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });

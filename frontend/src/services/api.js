@@ -1,12 +1,17 @@
 import axios from 'axios';
 
 // URLs de los microservicios
+// Usa el servidor unificado en desarrollo y producción
+const UNIFIED_URL = 'http://localhost:3000';
+const PROD_URL = 'https://caballeros-zodiacov2-unified.onrender.com';
+const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';
+
 const BASE_URLS = {
-  list: 'http://localhost:3001',
-  create: 'http://localhost:3002',
-  listByName: 'http://localhost:3003',
-  update: 'http://localhost:3004',
-  delete: 'http://localhost:3005',
+  list: IS_DEVELOPMENT ? UNIFIED_URL : PROD_URL,
+  create: IS_DEVELOPMENT ? UNIFIED_URL : PROD_URL,
+  listByName: IS_DEVELOPMENT ? UNIFIED_URL : PROD_URL,
+  update: IS_DEVELOPMENT ? UNIFIED_URL : PROD_URL,
+  delete: IS_DEVELOPMENT ? UNIFIED_URL : PROD_URL,
 };
 
 // Función para obtener todos los caballeros

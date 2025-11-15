@@ -42,7 +42,7 @@ app = FastAPI(
     description="Servidor unificado para todas las operaciones CRUD de caballeros",
     version="1.0.0",
     servers=[
-        {"url": "https://caballeros-zodiacov2-create.onrender.com/", "description": "Servidor de Creación"},
+        {"url": "http://localhost:3002", "description": "Servidor de Creación"},
         {"url": "http://localhost:3001", "description": "Servidor de Listado"},
         {"url": "http://localhost:3003", "description": "Servidor de Listado por Nombre"},
         {"url": "http://localhost:3004", "description": "Servidor de Actualización"},
@@ -52,7 +52,7 @@ app = FastAPI(
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "https://caballeros-zodiacov2-frontend.onrender.com"],
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -1,17 +1,12 @@
 import axios from 'axios';
 
-// URL del servidor unificado
-const BASE_URL = process.env.NODE_ENV === 'production'
-  ? 'https://caballeros-zodiacov2-unified.onrender.com'
-  : 'http://localhost:3007';
-
-// URLs de los microservicios (usando el servidor unificado)
+// URLs de los microservicios
 const BASE_URLS = {
-  list: BASE_URL,
-  create: BASE_URL,
-  listByName: BASE_URL,
-  update: BASE_URL,
-  delete: BASE_URL,
+  list: 'http://localhost:3001',
+  create: 'http://localhost:3002',
+  listByName: 'http://localhost:3003',
+  update: 'http://localhost:3004',
+  delete: 'http://localhost:3005',
 };
 
 // Función para obtener todos los caballeros

@@ -35,4 +35,3 @@ class CaballerosServices:
     def eliminar_caballero(self, nombre):
         self.collection.delete_one({"nombre": nombre})
         return {"message": "Caballero eliminado exitosamente"}
-

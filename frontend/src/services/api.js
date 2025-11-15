@@ -2,6 +2,7 @@ import axios from 'axios';
 
 // URLs de los microservicios
 // Usa el servidor unificado en desarrollo y producción
+// Versión: 1.0 - Servidor unificado activado
 const UNIFIED_URL = 'http://localhost:3000';
 const PROD_URL = 'https://caballeros-zodiacov2-unified.onrender.com';
 const IS_DEVELOPMENT = process.env.NODE_ENV === 'development';

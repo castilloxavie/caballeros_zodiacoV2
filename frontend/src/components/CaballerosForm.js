@@ -68,7 +68,7 @@ const CaballerosForm = () => {
             <option value="Aries">Aries</option>
             <option value="Tauro">Tauro</option>
             <option value="Géminis">Géminis</option>
-            <option value="Cáncer">Cáncer</option>
+            <option value="Cáncer">Cancer</option>
             <option value="Leo">Leo</option>
             <option value="Virgo">Virgo</option>
             <option value="Libra">Libra</option>
@@ -77,11 +77,11 @@ const CaballerosForm = () => {
             <option value="Capricornio">Capricornio</option>
             <option value="Acuario">Acuario</option>
             <option value="Piscis">Piscis</option>
-            <option value="Dragón">Dragón</option>
+            <option value="Dragón">Dragon</option>
             <option value="Pegasus">Pegasus</option>
             <option value="Cisne">Cisne</option>
-            <option value="Andrómeda">Andrómeda</option>
-            <option value="Fénix">Fénix</option>
+            <option value="Andrómeda">Andromeda</option>
+            <option value="Fénix">Fenix</option>
             <option value="Osa Mayor">Osa Mayor</option>
           </select>
         </div>

@@ -1,29 +1,13 @@
-# Dependencias principales del proyecto
-fastapi==0.121.1          # Framework web asíncrono para construir APIs REST
-uvicorn==0.38.0           # Servidor ASGI para ejecutar aplicaciones FastAPI
-pydantic==2.12.4          # Librería para validación de datos y modelos
-pydantic_core==2.41.5     # Núcleo de Pydantic para rendimiento
-annotated-types==0.7.0    # Tipos anotados para Pydantic
-typing_extensions==4.15.0 # Extensiones de tipos para compatibilidad
-typing-inspection==0.4.2  # Inspección de tipos
-annotated-doc==0.0.4      # Documentación anotada
+fastapi==0.121.1
+uvicorn==0.38.0
 
-# Base de datos y conexiones
-pymongo==4.15.3           # Driver oficial de MongoDB para Python
-motor==3.7.1              # Driver asíncrono de MongoDB para Python
-dnspython==2.8.0          # Soporte DNS para conexiones MongoDB
+# Base de datos
+motor==3.7.1
+pymongo==4.15.3
+dnspython==2.8.0
 
 # Variables de entorno
-python-dotenv==1.2.1      # Carga variables de entorno desde archivos .env
+python-dotenv==1.2.1
 
-# Validación y utilidades
-email-validator==2.3.0    # Validación de correos electrónicos
-anyio==4.11.0            # Interfaz asíncrona para compatibilidad
-sniffio==1.3.1           # Detección de backend asíncrono
-h11==0.16.0              # Protocolo HTTP/1.1
-idna==3.11               # Codificación IDNA para URLs
-starlette==0.49.3        # Framework base para FastAPI
-
-# Utilidades de línea de comandos y colores
-click==8.3.0             # Librería para crear comandos CLI
-colorama==0.4.6          # Colores en terminal para Windows
+# Validación opcional
+email-validator==2.3.0

@@ -3,7 +3,7 @@ import axios from 'axios';
 // URL del servidor unificado
 const BASE_URL = process.env.NODE_ENV === 'production'
   ? 'https://caballeros-zodiacov2-unified.onrender.com'
-  : 'http://localhost:3000';
+  : 'http://localhost:3007';
 
 // URLs de los microservicios (usando el servidor unificado)
 const BASE_URLS = {

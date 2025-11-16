@@ -178,6 +178,102 @@ h2 {
   color: rgba(255, 255, 255, 0.7);
 }
 
+/* Header */
+.header {
+  text-align: center;
+  padding: 20px 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.1) 100%);
+  backdrop-filter: blur(5px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.btn-docs {
+  background: linear-gradient(45deg, #6c5ce7, #a29bfe);
+  box-shadow: 0 4px 15px rgba(108, 92, 231, 0.4);
+}
+
+.btn-docs:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(108, 92, 231, 0.6);
+}
+
+/* App Layout */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.2) 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+  padding: 40px 20px 20px;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.footer-info h3,
+.footer-docs h3 {
+  color: #ffd700;
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.footer-info p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+.footer-info a {
+  color: #4ecdc4;
+  text-decoration: none;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+
+.nav-docs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
   .container {
@@ -188,5 +284,16 @@ h2 {
   }
   .grid {
     grid-template-columns: 1fr;
+  }
+  .nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .nav-docs {
+    justify-content: center;
   }
 }

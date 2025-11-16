@@ -224,15 +224,15 @@ El frontend estará disponible en: http://localhost:3000 (asegúrate de que el b
 
 ## API Endpoints
 
-### Microservicios Separados
+### Microservicios Desplegados (Render)
 
-- **GET /caballeros/** (Puerto 3001): Lista todos los caballeros.
-- **POST /caballeros/** (Puerto 3002): Crea un nuevo caballero.
-- **GET /caballeros/{nombre}** (Puerto 3003): Obtiene un caballero por nombre.
-- **PUT /caballeros/{nombre}** (Puerto 3004): Actualiza un caballero por nombre.
-- **DELETE /caballeros/{nombre}** (Puerto 3005): Elimina un caballero por nombre.
+- **GET https://caballeros-zodiacov2-list.onrender.com/caballeros/**: Lista todos los caballeros.
+- **POST https://caballeros-zodiacov2-create.onrender.com/caballeros/**: Crea un nuevo caballero.
+- **GET https://caballeros-zodiacov2-list-name.onrender.com/caballeros/{nombre}**: Obtiene un caballero por nombre.
+- **PUT https://caballeros-zodiacov2-1.onrender.com/caballeros/{nombre}**: Actualiza un caballero por nombre.
+- **DELETE https://caballeros-zodiacov2-delete.onrender.com/caballeros/{nombre}**: Elimina un caballero por nombre.
 
-### Servidor Unificado
+### Servidor Unificado (Local)
 
 - **GET /caballeros/**: Lista todos los caballeros.
 - **POST /caballeros/**: Crea un nuevo caballero.

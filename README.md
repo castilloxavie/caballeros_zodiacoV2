@@ -11,6 +11,15 @@
 
 Una aplicación web completa para gestionar los Caballeros del Zodiaco, inspirada en la famosa serie de anime y manga. Esta aplicación permite realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los caballeros, con un backend basado en microservicios usando FastAPI y un frontend moderno construido con React.
 
+## 🎬 Demo del Proyecto
+
+[![Ver demo en YouTube](https://img.youtube.com/vi/Z05sRQJOe60/0.jpg)](https://youtu.be/Z05sRQJOe60)
+
+> ▶️ **Mirar el video:** Haz clic en la imagen para ver la demostración completa.
+>
+> **Importante:** Lee con atención el paso a paso en el archivo `README.md` para seguir correctamente la instalación.
+
+
 ## Características
 
 - **Gestión completa de Caballeros**: Crear, listar, ver detalles, editar y eliminar caballeros del zodiaco.

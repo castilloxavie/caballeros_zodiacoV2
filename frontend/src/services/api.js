@@ -2,11 +2,11 @@ import axios from 'axios';
 
 // URLs de los microservicios
 const BASE_URLS = {
-  list: 'http://localhost:3001',
-  create: 'http://localhost:3002',
-  listByName: 'http://localhost:3003',
-  update: 'http://localhost:3004',
-  delete: 'http://localhost:3005',
+  list: 'https://caballeros-zodiacov2-list.onrender.com',
+  create: 'https://caballeros-zodiacov2-create.onrender.com',
+  listByName: 'https://caballeros-zodiacov2-list-name.onrender.com',
+  update: 'https://caballeros-zodiacov2-1.onrender.com',
+  delete: 'https://caballeros-zodiacov2-delete.onrender.com',
 };
 
 // Función para obtener todos los caballeros
